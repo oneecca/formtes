@@ -421,18 +421,7 @@ Oneecca
   if (Modernizr.touch) {
 
     // Disable keyboard by adding readonly attribute to field
-     $('[data-disable-touch-keyboard]').attr('readonly', 'readonly');
-    //
-    // // Add field value via JavaScript
-    // $('[data-disable-touch-keyboard]').click(function() {
-    //   var sampleConfirm = confirm('Would you like to add the current date & time as field value to demonstrate that the readonly field is still writable via JavaScript?');
-    //
-    //   if (sampleConfirm === true) {
-    //     $(this).val('Look, it works: ' + getDateTime());
-    //   }
-    // });
-
-  }
+     $('input--style-4a js-datepicker').attr('readonly', 'readonly');}
 
 });
           /* ================== button submit =============================*/
