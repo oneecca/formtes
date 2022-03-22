@@ -65,7 +65,7 @@
                                 <div class="input-group">
                                     <label class="label">Dipakai tanggal</label>
                                     <div class="input-group-icon">
-                                        <input class="input--style-4a js-datepicker" placeholder="Kapan baju akan dipakai?" type="text" name="hr" id="tgl">
+                                        <input class="input--style-4a js-datepicker" placeholder="Kapan baju akan dipakai?" type="text" name="hr" id="tgl" data-disable-touch-keyboard>
                                           <!--<i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>-->
                                     </div>
                                 </div>
@@ -74,7 +74,7 @@
                                 <div class="input-group">
                                     <label class="label">Diambil tanggal</label>
                                     <div class="input-group-icon">
-                                        <input class="input--style-4a js-datepicker " placeholder="Kapan baju rencana diambil?" type="text" name="hr2" id="tgl2">
+                                        <input class="input--style-4a js-datepicker " placeholder="Kapan baju rencana diambil?" type="text" name="hr2" id="tgl2" data-disable-touch-keyboard>
                                         <!--<i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>-->
                                     </div>
                                 </div>
@@ -231,6 +231,21 @@ classic radio
                                                           <label for="hjb0">Non Hijab - tanpa Hijab </label>
                                                         </div>
                                                       </div>
+
+
+                                                            <div class="col-2">
+                                                            <div class="gs0"></div>
+                                                          <form class="frmb">
+                                                            <label class="lbl2b">Masker Fashion/ protokoler</label>
+                                                            <div class="inGrp">
+                                                              <input id="msk" name="msk" value="YES!" type="radio"/checked>
+                                                              <label for="msk">include bikinkan maskernya</label>
+                                                            </div>
+                                                            <div class="inGrp">
+                                                              <input id="msk0" name="msk" value="X" type="radio"/>
+                                                              <label for="msk0">punya sendiri/ Not included</label>
+                                                            </div>
+                                                          </div>
 
                                                         <div class="col-2">
                                                           <div class="gs0"></div>
@@ -400,6 +415,26 @@ Oneecca
     <!-- Main JS-->
     <script src="js/global.js"></script>
     <script type="text/javascript">
+
+    $(document).ready(function() {
+
+  if (Modernizr.touch) {
+
+    // Disable keyboard by adding readonly attribute to field
+     $('[data-disable-touch-keyboard]').attr('readonly', 'readonly');
+    //
+    // // Add field value via JavaScript
+    // $('[data-disable-touch-keyboard]').click(function() {
+    //   var sampleConfirm = confirm('Would you like to add the current date & time as field value to demonstrate that the readonly field is still writable via JavaScript?');
+    //
+    //   if (sampleConfirm === true) {
+    //     $(this).val('Look, it works: ' + getDateTime());
+    //   }
+    // });
+
+  }
+
+});
           /* ================== button submit =============================*/
           var inputValue = "1"
           $("#autohide").hide();
@@ -424,6 +459,7 @@ Oneecca
                   input_product       = $("#product").val(),
                   input_payet         = $("#payet").val(),
                   input_hjb         	= $("input:radio[name=hjb]:checked").val(),
+                  input_msk         	= $("input:radio[name=msk]:checked").val(),
                   input_mdl         	= $("input:radio[name=mdl]:checked").val(),
                   input_wk         		= $("#wk").val(),
                   input_tb         		= $("#tb").val(),
@@ -434,15 +470,15 @@ Oneecca
               var walink      = 'https://web.whatsapp.com/send',
                   phone2       = '6285834326162',
                   phone       = '6285107925666',
-                  text        = 'Haaai kak Oneecca Kenalin saya : ',
-                  text1        = 'apakah bisa? ',
+                  text        = 'Haaai kak Oneecca Kenalin... ',
+                  text1        = 'booking tanggal itu bisa kah? ',
                   text2        = 'Modelnya seperti ini',
                   text3        = 'baiknya gimana ya kak?',
                   text4        = 'wait saya kirim modelnya..',
                   text5        = 'Model seperti gambar dipadukan dengan',
                   text6        = 'ga ada refrensi Model tapi,',
-                  text_yes    = 'Pesanan Anda berhasil terkirim',
-                  text_no     = 'bantu lengkapi form dulu ya kak, agar respon si mimin cepat';
+                  text_yes    = 'Pilih WhatsApp lalu klik Send >> | Pesanan anda terkirim',
+                  text_no     = 'lengkapi form dulu yah kak, agar pesanan sesuai impian';
 
               /* Smartphone Support */
               if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
@@ -452,7 +488,7 @@ Oneecca
               if(input_mdl == "a" && input_name != "" && input_add != "" && input_tgl != "" && input_tgl2 != "" && input_product != "" && input_payet != "" ){
                   /* Whatsapp URL */
                   var checkout_whatsapp = walink + '?phone=' + phone + '&text=' + text + '%0A' +
-                      'Nama : *' + input_name + '*%0A' +
+                      'Saya *' + input_name + '*%0A' +
                       'Dari : *' + input_add + '*%0A' +
                       'Pengen : *' + input_hak + '*%0A' +
                       'dipakai : *' + input_tgl + '*%0A' +
@@ -462,6 +498,7 @@ Oneecca
                       'Acara : *' + input_product + '*%0A' +
                       'Hijab : *' + input_hjb + '*%0A' +
                       'Payet : *' + input_payet + '*%0A' +
+                      'Masker : *' + input_msk + '*%0A' +
                       '```- ' + input_description + '```%0A' +
                       text1 + '%0A%0A' + text2 + '%0A' + text4;
 
@@ -472,7 +509,7 @@ Oneecca
               } else if(input_mdl == "b" && input_name != "" && input_add != "" && input_tgl != "" && input_tgl2 != "" && input_product != "" && input_wk != ""  && input_tb != "" && input_bb != "" && input_payet != "" ){
                   /* Whatsapp URL */
                   var checkout_whatsapp = walink + '?phone=' + phone + '&text=' + text + '%0A' +
-                      'Nama : *' + input_name + '*%0A' +
+                      'Saya *' + input_name + '*%0A' +
                       'Dari : *' + input_add + '*%0A' +
                       'Pengen : *' + input_hak + '*%0A' +
                       'dipakai : *' + input_tgl + '*%0A' +
@@ -482,6 +519,7 @@ Oneecca
                       'Acara : *' + input_product + '*%0A' +
                       'Hijab : *' + input_hjb + '*%0A' +
                       'Payet : *' + input_payet + '*%0A' +
+                      'Masker : *' + input_msk + '*%0A' +
                       '```- ' + input_description + '```%0A' +
                       text1 + '%0A%0A' +
                       text5 + '%0A'+
@@ -498,7 +536,7 @@ Oneecca
               } else if(input_mdl == "c" && input_name != "" && input_add != "" && input_tgl != "" && input_tgl2 != "" && input_product != "" && input_wk != ""  && input_tb != "" && input_bb != "" && input_payet != "" ){
                   /* Whatsapp URL */
                   var checkout_whatsapp = walink + '?phone=' + phone + '&text=' + text + '%0A' +
-                      'Nama : *' + input_name + '*%0A' +
+                      'Saya *' + input_name + '*%0A' +
                       'Dari : *' + input_add + '*%0A' +
                       'Pengen : *' + input_hak + '*%0A' +
                       'dipakai : *' + input_tgl + '*%0A' +
@@ -508,6 +546,7 @@ Oneecca
                       'Acara : *' + input_product + '*%0A' +
                       'Hijab : *' + input_hjb + '*%0A' +
                       'Payet : *' + input_payet + '*%0A' +
+                      'Masker : *' + input_msk + '*%0A' +
                       '```- ' + input_description + '```%0A' +
                       text1 + '%0A%0A' +
                       text6 + '%0A'+
