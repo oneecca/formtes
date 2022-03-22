@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="theme-color" content="#6f42c1" />
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>oneecca.com-whatsapp-orders-form</title>
+
+    <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <script
+    type="text/javascript" src="vendor/jquery/jquery.min.js">
+    </script>
+
+    <!-- Main CSS-->
+    <link href="css/ai-01.css" rel="stylesheet" media="all">
+</head>
+
+<body>
+    <div class="page-wrapper bg-gra-02 p-t-10 p-b-10 font-poppins">
+        <div class="wrapper">
+            <div class="card card-4">
+                <div class="grid-container">
+                  <div>
+                    <label class="lbl0">Oneecca </label><br>
+                    <label class="lbl1"> WhatsApp Order Form </label>
+                  </div>
+                    <div>
+                      <img src="Oneecca.svg" alt="oneecca">
+                    </div>
+                  </div>
+                      <div class="gs1"></div>
+                    <form method="POST">
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Nama</label>
+                                    <input class="input--style-4a" type="text" placeholder="boleh nama singkat/ nama panggilan aja kak.. " name="nam" id="name">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Alamat</label>
+                                    <input class="input--style-4a" type="text" placeholder="alamat pendek aja kak.. | ex : Pare, Lahat-Sumsel, Jakarta, Kediri, " name="alm" id="add">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Dipakai tanggal</label>
+                                    <div class="input-group-icon">
+                                        <input class="input--style-4a js-datepicker" placeholder="Kapan baju akan dipakai?" type="text" name="hr" id="tgl">
+                                          <!--<i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Diambil tanggal</label>
+                                    <div class="input-group-icon">
+                                        <input class="input--style-4a js-datepicker " placeholder="Kapan baju rencana diambil?" type="text" name="hr2" id="tgl2">
+                                        <!--<i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+  <!-- ====================
+classic radio
+========================-->
+<!--
+<label class="radio">Company
+  <input type="radio" checked="checked" name="is_company">
+  <span class="checkround"></span>
+</label>
+<label class="radio">Company
+  <input type="radio" name="is_company">
+  <span class="checkround"></span>
+</label>
+<label class="radio">Company
+  <input type="radio" name="is_company">
+  <span class="checkround"></span>
+</label>
+<label class="radio">Company
+  <input type="radio" name="is_company">
+  <span class="checkround"></span>
+</div>
+-->
+<!-- ====================
+ Coba block radio
+========================-->
+
+
+<form class="frma">
+
+  <div class="row row-space">
+    <div class="col-2">
+  <div class="gs2"></div>
+  <label class="label">Made for...</label>
+  <div class="inGrp">
+    <input name="hak" id="hak2" value="Sewa Prdana" type="radio"/>
+    <label for="hak2">Sewa Perdana</label>
+  </div>
+  <div class="inGrp">
+    <input name="hak" id="hak1" value="Bikin Baju" type="radio"/checked>
+    <label for="hak1">Dimiliki</label>
+  </div>
+  <div class="inGrp">
+    <input name="hak" id="hak3" value="Sewa second" type="radio"/>
+    <label for="hak3">Sewa yang ada di Oneecca [sewa second]</label>
+  </div>
+</div>
+
+<div class="col-2">
+  <div class="gs2"></div>
+  <label class="label">Make a...</label>
+  <div class="inGrp">
+    <input name="stl" id="stl2" value="Stelan" type="radio"/checked>
+    <label for="stl2">Full/ Atasan &amp; Bawah/ Dress</label>
+  </div>
+  <div class="inGrp">
+    <input name="stl" id="stl1" value="Atasan" type="radio"/>
+    <label for="stl1">Atasan saja</label>
+  </div>
+  <div class="inGrp">
+    <input name="stl" id="stl3" value="Bawah aja" type="radio"/>
+    <label for="stl3">Bawah saja</label>
+  </div>
+</div>
+
+<div class="col-2"></div>
+<div class="col-2">
+    <div class="gs2"></div>
+    <label class="label">Bahan Kain...</label>
+    <div class="inGrp">
+      <input name="bhk" id="bhk2" value="bawa sndri" type="radio"/checked>
+      <label for="bhk2">Bawa Sendiri</label>
+    </div>
+    <div class="inGrp">
+      <input name="bhk" id="bhk1" value="Punya tp kurang" type="radio"/>
+      <label for="bhk1">Bawa sebagian, nanti ditambahin Oneecca</label>
+    </div>
+    <div class="inGrp">
+      <input name="bhk" id="bhk3" value="blm ada/ di oneecca" type="radio"/>
+      <label for="bhk3">Oleh Oneecca/ Pilih di Oneecca</label>
+    </div>
+  </div>
+
+</div>
+
+</form>
+
+                          <div class="card3 bg-gra-03">
+                                      <div class="col-md-2">
+                                          <label class="lblb">Attire</label>
+                                          <div class="gs2b"></div>
+                                                  <div class="col-md-6">
+                                                  </div>
+                                                  <div class="row row-space">
+
+                                                  <div class="col-2">
+                                                    <div class="input-group">
+                                                        <label class="lbl2b">Dress Code - Acara</label>
+
+                                                            <select name="product" id="product" class="fom-c">
+                                                                <option disabled="disabled" selected="selected">--- Pilih acara ---</option>
+                        <option value="Santai">Santai  [sehari-hari]</option>
+                        <option value="Wedding">Wedding / Nikahan / Baju Manten</option>
+                        <option value="Keluarga Manten">Family Wedding Dress / Keluarga Manten </option>
+                        <option value="Bridesmaid">Bridesmaid </option>
+                        <option value="Pgr Ayu">Pagar Ayu / Among Tamu </option>
+                        <option value="Pre-Wed">Pre-Wedding</option>
+                        <option value="Lamaran">Engagement / Lamaran</option>
+                        <option value="Kondangan">Kondangan / Party Dress</option>
+                        <option value="Ultah">Ulang Tahun</option>
+                        <option value="MC">MC / Master of Ceremony</option>
+                        <option value="Event Ptg">Event Penting</option>
+                        <option value="Keluarga">Family Event / Acara Keluarga</option>
+                        <option value="Maternity">Maternity / Momen Kehamilan</option>
+                        <option value="Foto">Foto Grafi</option>
+                        <option value="Baju Krja">Baju Kerja</option>
+                        <option value="-">Lainya</option>
+                                                            </select>
+
+                                                    </div>
+                                                  </div>
+
+                                                  <div class="col-2">
+                                                      <div class="input-group">
+                                                          <label class="lbl2b">Payet</label>
+                                                              <select name="payet" id="payet" class="fom-c">
+                                                                  <option disabled="disabled" selected="selected">-- pilih desain / penggunaan payet --</option>
+                                                                  <option value="X">Tanpa Payet</option>
+                                                                  <option value="Full pyt">Full payet</option>
+                                                                  <option value="Semi Full">Semi full payet</option>
+                                                                  <option value="Inti">Payet inti saja</option>
+                                                                  <option value="sesuai gmbr">Sesuai gambar yg akan saya kirim</option>
+                                                                  <option value="konsultasi">baiknya gimana?</option>
+                                                              </select>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+
+                                                  <div class="row row-space">
+                                                        <div class="col-2">
+                                                        <div class="gs0"></div>
+                                                      <form class="frmb">
+                                                        <label class="lbl2b">Kerudung/ Jilbab/ Hijab</label>
+                                                        <div class="inGrp">
+                                                          <input id="hjb" name="hjb" value="YES" type="radio"/checked>
+                                                          <label for="hjb">dengan Hijab </label>
+                                                        </div>
+                                                        <div class="inGrp">
+                                                          <input id="hjb0" name="hjb" value="Non Hijab" type="radio"/>
+                                                          <label for="hjb0">Non Hijab - tanpa Hijab </label>
+                                                        </div>
+                                                      </div>
+
+                                                        <div class="col-2">
+                                                          <div class="gs0"></div>
+                                                        <label class="lbl2b">Desain Baju yang diimpikan</label>
+                                                        <div class="inGrp">
+                                                          <input name="mdl" id="1" value="a" type="radio"/checked>
+                                                          <label for="1">Kirim foto contoh <h6> model desain sesuai foto-gambar</h6> </label>
+                                                        </div>
+                                                        <div class="inGrp">
+                                                          <input name="mdl" id="2" value='b' type="radio"/>
+                                                          <label for="2">Kirim foto &amp; sesuaikan <h6> konsultasikan desain bersama Oneecca</h6> </label>
+                                                        </div>
+                                                        <div class="inGrp">
+                                                          <input name="mdl" id="3" value="c" type="radio"/>
+                                                          <label for="3">Bingung modelnya gimana.. <h6> inspirasi/ saran desain dari Oneecca</h6> </label>
+                                                        </div>
+                                                      <div class="autohide" id="autohide">
+                                                      <div class="row row-space">
+                                                        <div class="gs0"></div>
+                                                          <div class="col-2b">
+                                                              <label class="lbl2b">Proporsi tubuh:</label>
+                                                          </div>
+                                                            <div class="col-2b">
+                                                                <!-- <label class="lbl2b">Proporsi tubuh:</label> -->
+                                                            </div>
+                                                          <div class="col-2b">
+                                                            <div class="input-group2">
+                                                                <label class="lbl2c">Tinggi Badan [cm]</label>
+                                                                <input name="tb" id="tb" class="input--style-4" type="number" placeholder="ex : 140, 153, 168">
+                                                            </div>
+                                                          </div>
+                                                          <div class="col-2b">
+                                                            <div class="input-group2">
+                                                                <label class="lbl2c">Berat Badan [Kg]</label>
+                                                                <input name="bb" id="bb" class="input--style-4" type="number" placeholder="ex : 48, 52, 60, 70">
+                                                            </div>
+                                                          </div>
+                                                          <div class="col-2c">
+                                                            <div class="input-group2">
+                                                                <label class="lbl2c">Warna Kulit</label>
+                                                                <input name="wk" id="wk" class="input--style-4" type="text" placeholder="ex : cerah, gelap, sawo matang, kuning langsat ... ">
+                                                            </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+
+                                                </div>
+                                              </div>
+
+                                                      </form>
+<h7>
+<br>
+<i class="fa fa-lightbulb-o" aria-hidden="true"></i>&ensp; Semua informasi ini penting bagi Oneecca agar : <br>
+&ensp;&emsp;<i class="fa fa-check-square-o" aria-hidden="true"></i>&ensp;Pengerjaan Tepat Waktu <br>
+&ensp;&emsp;<i class="fa fa-check-square-o" aria-hidden="true"></i>&ensp;Kakak bisa Fitting sebelum hari H <br>
+&ensp;&emsp;<i class="fa fa-check-square-o" aria-hidden="true"></i>&ensp;Model baju sesuai impian
+</h7>
+                                            </div>
+                            </div>
+
+
+                              <div class="input-group">
+                                  <label class="label2">Catatan</label>
+                                  <input class="input--style-4b" placeholder="bila ada catatan tambahan [boleh dikosongkan]" name="desc" id="desc">
+                              </div>
+                        <div class="p-t-15a">
+                            <div id="text-info"></div>
+                        </div>
+                    </form>
+                    <button class="btn btn--radius-2 btn--def send">&ensp;Buat Pesanan &#8811;</button>
+<div class="gs2"></div>
+
+<div class="row row-space">
+      <div class="col-2">
+<div class="card7">
+
+<!-- ========================= -->
+<div class="ro1"><div class="col-0"><h8><li class="a"></li></h8></div><div class="col-0b"><h8>
+<b>Penting bagi kita bersama</b>
+</h8>  </div></div>
+<!-- ========================= -->
+<div class="ro2"><div class="col-0"><h8><li class="b0"></li></h8></div><div class="col-0b"><h8>
+Pengerjaan sesuai deadline yg kosong
+</h8></div></div>
+<!-- ========================= -->
+<div class="ro2"><div class="col-0"><h8><li class="b0"></li></h8></div><div class="col-0b"><h8>
+Price tergantung pengerjaan, model, &amp; payet
+</h8></div></div>
+<!-- ========================= -->
+<div class="ro2"><div class="col-0"><h8><li class="b0"></li></h8></div><div class="col-0b"><h8>
+Pesanan akan dikerjakan, setelah DP masuk minimal 50%
+</h8></div></div>
+<!-- ========================= -->
+<div class="ro2"><div class="col-0"><h8><li class="b0"></li></h8></div><div class="col-0b"><h8>
+Oneecca akan chat kakak jika pesanan kakak sudah siap / selesai
+</h8></div></div>
+<!-- ========================= -->
+<div class="ro2"><div class="col-0"><h8><li class="b"></li></h8></div><div class="col-0b"><h8>
+Pesanan yg tidak diambil lebih dari 3 bulan (90 hari) dari tanggal perjanjian maka, pesanan akan dilelang / dianggap kakak telah merelakanya menjadi hak milik Oneecca sebagai ganti biaya jasa/ produksi
+</h8></div></div>
+<!-- ========================= -->
+<div class="ro2"><div class="col-0"><h8><li class="b2"></li></h8></div><div class="col-0b"><h8>
+Fitting sangat penting agar Oneecca bisa revisi jika ada perubahan proporsi badan kakak sebelum hari H
+</h8></div></div>
+<!-- ========================= -->
+<div class="ro2"><div class="col-0"><h8><li class="b3"></li></h8></div><div class="col-0b"><h8>
+Usahakanlah Fitting sebelum hari H
+</h8></div></div>
+<!-- ========================= -->
+<div class="ro3"><div class="col-0"><h8><li class="c"></li></h8></div><div class="col-0b"><h8>
+FAKTA : Proporsi badan perempuan berubah-ubah
+</h8></div></div>
+<!-- ========================= -->
+
+</div>
+</div>
+
+      <div class="col-2">
+<div class="card8">
+<i class="fa fa-heart" aria-hidden="true"></i>&ensp;
+Semoga Acara anda berjalan dgn baik &amp; lancar
+&ensp;<i class="fa fa-heart" aria-hidden="true"></i>
+<br>---<br>
+<i class="fa fa-heart" aria-hidden="true"></i>&ensp;
+Semoga Pekerjaan anda dimudahkan
+&ensp;<i class="fa fa-heart" aria-hidden="true"></i>
+<br>---<br>
+<i class="fa fa-heart" aria-hidden="true"></i>&ensp;
+Semoga anda selalu dalam keberuntungan
+&ensp;<i class="fa fa-heart" aria-hidden="true"></i>
+<br>---<br>
+<i class="fa fa-heart" aria-hidden="true"></i>&ensp;
+Semoga Rejeki anda Berkah Melimpaaah
+&ensp;<i class="fa fa-heart" aria-hidden="true"></i>
+<br>---
+</div>
+</div>
+</div>
+
+<div class="gs1b"></div>
+<h8>
+pengen bisnis kakak dibuatkan form seperti ini,
+chat Oneecca
+&nbsp;
+<i class="fa fa-smile-o" aria-hidden="true"></i>
+<br>
+</h8>
+<h9>
+&#124;
+<b>&nbsp;&copy;
+2021-2022
+&nbsp;
+Oneecca
+</b>
+</h9>
+                </div>
+            </div>
+        </div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
+    <script type="text/javascript">
+          /* ================== button submit =============================*/
+          var inputValue = "1"
+          $("#autohide").hide();
+          $('input:radio[name="mdl"]').click(function () {
+            var inputValue = $(this).attr("id");
+            if (inputValue == "1") {
+              $("#autohide").hide();
+            } else {
+              $("#autohide").show();
+            }
+          });
+
+          $(document).on('click','.send', function(){
+              /* Inputan Formulir */
+              var input_name          = $("#name").val(),
+                  input_add           = $("#add").val(),
+                  input_tgl         	= $("#tgl").val(),
+                  input_tgl2         	= $("#tgl2").val(),
+                  input_hak         	= $("input:radio[name=hak]:checked").val(),
+                  input_stl         	= $("input:radio[name=stl]:checked").val(),
+                  input_bhn         	= $("input:radio[name=bhk]:checked").val(),
+                  input_product       = $("#product").val(),
+                  input_payet         = $("#payet").val(),
+                  input_hjb         	= $("input:radio[name=hjb]:checked").val(),
+                  input_mdl         	= $("input:radio[name=mdl]:checked").val(),
+                  input_wk         		= $("#wk").val(),
+                  input_tb         		= $("#tb").val(),
+                  input_bb         		= $("#bb").val(),
+                  input_description   = $("#desc").val();
+
+              /* Pengaturan Whatsapp */
+              var walink      = 'https://web.whatsapp.com/send',
+                  phone2       = '6285834326162',
+                  phone       = '6285107925666',
+                  text        = 'Haaai kak Oneecca Kenalin saya : ',
+                  text1        = 'apakah bisa? ',
+                  text2        = 'Modelnya seperti ini',
+                  text3        = 'baiknya gimana ya kak?',
+                  text4        = 'wait saya kirim modelnya..',
+                  text5        = 'Model seperti gambar dipadukan dengan',
+                  text6        = 'ga ada refrensi Model tapi,',
+                  text_yes    = 'Pesanan Anda berhasil terkirim',
+                  text_no     = 'bantu lengkapi form dulu ya kak, agar respon si mimin cepat';
+
+              /* Smartphone Support */
+              if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                  var walink = 'whatsapp://send';
+              }
+
+              if(input_mdl == "a" && input_name != "" && input_add != "" && input_tgl != "" && input_tgl2 != "" && input_product != "" && input_payet != "" ){
+                  /* Whatsapp URL */
+                  var checkout_whatsapp = walink + '?phone=' + phone + '&text=' + text + '%0A' +
+                      'Nama : *' + input_name + '*%0A' +
+                      'Dari : *' + input_add + '*%0A' +
+                      'Pengen : *' + input_hak + '*%0A' +
+                      'dipakai : *' + input_tgl + '*%0A' +
+                      'ambil : *' + input_tgl2 + '*%0A' +
+                      'Bikin : *' + input_stl + '*%0A' +
+                      'Bahan : *' + input_bhn + '*%0A' +
+                      'Acara : *' + input_product + '*%0A' +
+                      'Hijab : *' + input_hjb + '*%0A' +
+                      'Payet : *' + input_payet + '*%0A' +
+                      '```- ' + input_description + '```%0A' +
+                      text1 + '%0A%0A' + text2 + '%0A' + text4;
+
+                  /* Whatsapp Window Open */
+                  window.open(checkout_whatsapp,'_blank');
+                  document.getElementById("text-info").innerHTML = '<div class="alert alert-success">'+text_yes+'&ensp;<i class="fa fa-smile-o" aria-hidden="true"></i></div>';
+
+              } else if(input_mdl == "b" && input_name != "" && input_add != "" && input_tgl != "" && input_tgl2 != "" && input_product != "" && input_wk != ""  && input_tb != "" && input_bb != "" && input_payet != "" ){
+                  /* Whatsapp URL */
+                  var checkout_whatsapp = walink + '?phone=' + phone + '&text=' + text + '%0A' +
+                      'Nama : *' + input_name + '*%0A' +
+                      'Dari : *' + input_add + '*%0A' +
+                      'Pengen : *' + input_hak + '*%0A' +
+                      'dipakai : *' + input_tgl + '*%0A' +
+                      'ambil : *' + input_tgl2 + '*%0A' +
+                      'Bikin : *' + input_stl + '*%0A' +
+                      'Bahan : *' + input_bhn + '*%0A' +
+                      'Acara : *' + input_product + '*%0A' +
+                      'Hijab : *' + input_hjb + '*%0A' +
+                      'Payet : *' + input_payet + '*%0A' +
+                      '```- ' + input_description + '```%0A' +
+                      text1 + '%0A%0A' +
+                      text5 + '%0A'+
+                      'Warna Kulit : *'+ input_wk + '*%0A' +
+                      'TB : *'+ input_tb + ' cm*%0A' +
+                      'BB : *'+ input_bb + ' kg*%0A%0A' +
+                      text3 + '%0A%0A' +
+                      text4;
+
+                  /* Whatsapp Window Open */
+                  window.open(checkout_whatsapp,'_blank');
+                  document.getElementById("text-info").innerHTML = '<div class="alert alert-success">'+text_yes+'&ensp;<i class="fa fa-smile-o" aria-hidden="true"></i></div>';
+
+              } else if(input_mdl == "c" && input_name != "" && input_add != "" && input_tgl != "" && input_tgl2 != "" && input_product != "" && input_wk != ""  && input_tb != "" && input_bb != "" && input_payet != "" ){
+                  /* Whatsapp URL */
+                  var checkout_whatsapp = walink + '?phone=' + phone + '&text=' + text + '%0A' +
+                      'Nama : *' + input_name + '*%0A' +
+                      'Dari : *' + input_add + '*%0A' +
+                      'Pengen : *' + input_hak + '*%0A' +
+                      'dipakai : *' + input_tgl + '*%0A' +
+                      'ambil : *' + input_tgl2 + '*%0A' +
+                      'Bikin : *' + input_stl + '*%0A' +
+                      'Bahan : *' + input_bhn + '*%0A' +
+                      'Acara : *' + input_product + '*%0A' +
+                      'Hijab : *' + input_hjb + '*%0A' +
+                      'Payet : *' + input_payet + '*%0A' +
+                      '```- ' + input_description + '```%0A' +
+                      text1 + '%0A%0A' +
+                      text6 + '%0A'+
+                      'Warna Kulit : *'+ input_wk + '*%0A' +
+                      'TB : *'+ input_tb + ' cm*%0A' +
+                      'BB : *'+ input_bb + ' kg*%0A%0A' +
+                      text3;
+
+                  /* Whatsapp Window Open */
+                  window.open(checkout_whatsapp,'_blank');
+                  document.getElementById("text-info").innerHTML = '<div class="alert alert-success">'+text_yes+'&ensp;<i class="fa fa-smile-o" aria-hidden="true"></i></div>';
+
+
+              } else {
+                  document.getElementById("text-info").innerHTML = '<div class="alert alert-danger"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>&ensp;'+text_no+'&ensp;<i class="fa fa-smile-o" aria-hidden="true"></i></div>';
+              }
+          });
+  </script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
+<!-- end document-->
